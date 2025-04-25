@@ -9,7 +9,24 @@
 <body>
     <h1>Welcome to Froyo!</h1>
     <p>A great place to find your favorite frozen yogurt flavors.</p> 
-  
+<form action="/submit-order" method="post">
+    <label for="customer-name">Your Name:</label>
+    <input type="text" id="customer-name" name="customer-name" required>
+    <br>
+    <label for="strawberry">Strawberry:</label>
+    <input type="number" id="strawberry" name="strawberry" min="0" value="0">
+    <br>
+    <label for="vanilla">Vanilla:</label>
+    <input type="number" id="vanilla" name="vanilla" min="0" value="0">
+    <br>
+    <label for="coffee">Coffee:</label>
+    <input type="number" id="coffee" name="coffee" min="0" value="0">
+    <br>
+    <label for="mint">Mint:</label>
+    <input type="number" id="mint" name="mint" min="0" value="0">
+    <br>
+    <button type="submit">Place Order</button>
+</form>
 
 
 
